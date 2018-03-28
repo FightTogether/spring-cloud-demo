@@ -10,8 +10,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="eureka-server" target="1.5" />
+      <module name="eureka-server" target="1.8" />
       <module name="spring-cloud-demo" target="1.8" />
+      <module name="spring-cloud-demoeureka-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

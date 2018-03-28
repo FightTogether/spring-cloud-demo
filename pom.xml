@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>eureka-server</module>
+        <module>spring-cloud-demo-eureka-server</module>
    
     </modules>
     <name>spring-cloud-demo</name>
@@ -29,35 +29,43 @@
     
     </distributionManagement>
 
-   <!-- <repositories>
-      <repository>
-        <id>nexus</id>
-        <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-        <releases>
-          <enabled>true</enabled>
-        </releases>
-        <snapshots>
-          <enabled>true</enabled>
-        </snapshots>
-      </repository>
-    </repositories>
-    <pluginRepositories>
-      <pluginRepository>
-        <id>nexus</id>
-        <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-        <releases>
-          <enabled>true</enabled>
-        </releases>
-        <snapshots>
-          <enabled>true</enabled>
-        </snapshots>
-      </pluginRepository>
-    </pluginRepositories>-->
+    <!--<repositories>-->
+      <!--<repository>-->
+        <!--<id>nexus</id>-->
+        <!--<url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
+        <!--<releases>-->
+          <!--<enabled>true</enabled>-->
+        <!--</releases>-->
+        <!--<snapshots>-->
+          <!--<enabled>true</enabled>-->
+        <!--</snapshots>-->
+      <!--</repository>-->
+    <!--</repositories>-->
+    <!--<pluginRepositories>-->
+      <!--<pluginRepository>-->
+        <!--<id>nexus</id>-->
+        <!--<url>http://maven.aliyun.com/nexus/content/groups/public/</url>-->
+        <!--<releases>-->
+          <!--<enabled>true</enabled>-->
+        <!--</releases>-->
+        <!--<snapshots>-->
+          <!--<enabled>true</enabled>-->
+        <!--</snapshots>-->
+      <!--</pluginRepository>-->
+    <!--</pluginRepositories>-->
 
 
-   <!-- <dependencyManagement>
-       
-    </dependencyManagement>-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Dalston.SR4</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
