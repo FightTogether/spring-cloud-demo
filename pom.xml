@@ -9,18 +9,21 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>eurekaserver</module>
+        <module>eureka-server</module>
    
     </modules>
-    <name>xbin-store</name>
-    <url>http://binux.cn</url>
-
+    <name>spring-cloud-demo</name>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.1.RELEASE</version>
+        <version>1.5.2.RELEASE</version>
     </parent>
-
+    <properties>
+        <spring-boot-starter-parent.version>1.5.2.RELEASE</spring-boot-starter-parent.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+    </properties>
     <!-- 配置maven地址 -->
     <distributionManagement>
     
@@ -51,18 +54,10 @@
       </pluginRepository>
     </pluginRepositories>
 
-    <properties>
-   
 
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
+   <!-- <dependencyManagement>
        
-    </properties>
-
-    <dependencyManagement>
-       
-    </dependencyManagement>
-
+    </dependencyManagement>-->
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
