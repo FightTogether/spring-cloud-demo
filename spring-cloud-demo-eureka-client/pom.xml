@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.why360</groupId>
-	<artifactId>spring-cloud-demo-eureka-server</artifactId>
+	<artifactId>spring-cloud-demo-eureka-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-cloud-demo-eureka-server</name>
+	<name>spring-cloud-demo-eureka-client</name>
 	<description>Demo project for Spring Boot</description>
 
 
@@ -61,6 +61,7 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 
 </project>

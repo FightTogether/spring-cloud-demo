@@ -10,7 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-cloud-demo-eureka-server</module>
-   
+        <module>spring-cloud-demo-eureka-client</module>
+
     </modules>
     <name>spring-cloud-demo</name>
     <parent>
@@ -20,6 +21,7 @@
     </parent>
     <properties>
         <spring-boot-starter-parent.version>1.5.2.RELEASE</spring-boot-starter-parent.version>
+        <spring-cloud-dependencies.version>Dalston.SR4</spring-cloud-dependencies.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
@@ -54,13 +56,22 @@
       <!--</pluginRepository>-->
     <!--</pluginRepositories>-->
 
-
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Dalston.SR4</version>
+                <version>${spring-cloud-dependencies.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
