@@ -18,7 +18,6 @@ public class SpringCloudDemoEurekaClientApplication {
 		SpringApplication.run(SpringCloudDemoEurekaClientApplication.class, args);
 	}
 
-	@Value("${server.port}")
 	String port;
 	@RequestMapping("/hi")
 	public String home(@RequestParam String name) {
