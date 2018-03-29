@@ -18,8 +18,7 @@ public class SpringCloudDemoEurekaClientApplication {
 		SpringApplication.run(SpringCloudDemoEurekaClientApplication.class, args);
 	}
 
-	String port;
 	@RequestMapping("/hi")
 	public String home(@RequestParam String name) {
-		return "hi "+name+",i am from port:" +port;
+		return "hi "+name+",i am from port:" +System.getProperty("server.port");
 	}}
