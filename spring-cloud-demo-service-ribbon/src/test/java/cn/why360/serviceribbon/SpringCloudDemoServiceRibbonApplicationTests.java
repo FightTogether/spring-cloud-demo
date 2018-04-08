@@ -1,4 +1,4 @@
-package cn.why.serviceribbon;
+package cn.why360.serviceribbon;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

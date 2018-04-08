@@ -1,4 +1,4 @@
-package cn.why.serviceribbon.service;
+package cn.why360.serviceribbon.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;

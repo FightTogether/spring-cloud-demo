@@ -1,6 +1,6 @@
-package cn.why.serviceribbon.controller;
+package cn.why360.serviceribbon.controller;
 
-import cn.why.serviceribbon.service.HelloService;
+import cn.why360.serviceribbon.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
