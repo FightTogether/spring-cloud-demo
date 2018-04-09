@@ -14,6 +14,8 @@
         <module>spring-cloud-demo-service-ribbon</module>
         <module>spring-cloud-demo-service-feign</module>
         <module>spring-cloud-demo-service-zuul</module>
+        <module>spring-cloud-demo-config-server</module>
+        <module>spring-cloud-demo-config-client</module>
 
     </modules>
     <name>spring-cloud-demo</name>
