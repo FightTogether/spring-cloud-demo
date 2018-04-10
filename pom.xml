@@ -18,6 +18,7 @@
         <module>spring-cloud-demo-config-client</module>
         <module>spring-cloud-demo-server-zipkin</module>
         <module>spring-cloud-demo-service-test</module>
+        <module>spring-cloud-demo-service-miya</module>
 
     </modules>
     <name>spring-cloud-demo</name>
